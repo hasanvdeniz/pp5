@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" type="text/css"  href="{% static '1.css' %}">
+    <script src="{% static '1.js' %}"></script>
+</head>
+<body>
+    <h1>DJANGO PROJECT LEARNING</h1>
+    <P>BURASI ANASAYFA</P>
+    <a href="{% url 'second' %}" target="_blank">İkinci sayfaya link</a>    
+    <hr>
+    <hr>
+    <button onclick="myFunction()">Script i çalıştır</button>
+    <hr>
+    <hr>
+    <img src="{% static 'ev.jpg' %}">
+</body>
+</html>
